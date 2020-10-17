@@ -62,8 +62,7 @@ public class UserDTO {
 	}
 
 	public User convertToEntity(UserDTO userDTO) {
-		User entity = new User(userDTO);
-		return entity;
+		return new User(userDTO);
 
 	}
 
