@@ -34,8 +34,7 @@ public class InterviewDTO {
 	}
 
 	public Interview ConvertToEntity(InterviewDTO interviewDTO) {
-		Interview entity = new Interview(interviewDTO);
-		return entity;
+		return new Interview(interviewDTO);
 	}
 
 	public boolean isInterviewValid(InterviewDTO interviewDTO) throws ITSException {
